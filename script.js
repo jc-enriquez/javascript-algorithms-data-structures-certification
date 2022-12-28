@@ -182,3 +182,235 @@ let newestStr = "Jello World";
 // Only change code below this line
 newestStr = "Hello World"; // Change this line
 // Only change code above this line
+
+//34th task
+// Setup
+const lastNameNew = "Lovelace";
+
+// Only change code below this line
+const thirdLetterOfLastName = lastNameNew[2]; // Change this line
+
+//35th task
+// Setup
+const newerLastName = "Lovelace";
+
+// Only change code below this line
+const lastLetterOfLastName = newerLastName[newerLastName.length - 1]; // Change this line
+
+//36th task
+// Setup
+const lastNameSecond = "Lovelace";
+
+// Only change code below this line
+const secondToLastLetterOfLastName = lastNameSecond[lastNameSecond.length - 2]; // Change this line
+
+//37th task
+const myNoun = "dog";
+const myAdjective = "big";
+const myVerb = "ran";
+const myAdverb = "quickly";
+
+// Only change code below this line
+const wordBlanks = myAdjective + " " + myNoun + " " + myVerb + " " + myAdverb; // Change this line
+// Only change code above this line
+
+//38th task
+// Only change code below this line
+const myArray = ["This is my string", 2];
+
+//39th task
+// Only change code below this line
+const newArray = [
+  ["Lakers", 24],
+  ["Warriors", 30],
+];
+
+//40th task
+const newerArray = [50, 60, 70];
+
+const myData = newerArray[0];
+
+//41st task
+// Setup
+const newestArray = [18, 64, 99];
+
+// Only change code below this line
+newestArray[0] = 45;
+
+//42nd task
+const nestedArray = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+  [[10, 11, 12], 13, 14],
+];
+
+const nestedData = nestedArray[2][1];
+
+//43rd task
+// Setup
+const pushArray = [
+  ["John", 23],
+  ["cat", 2],
+];
+
+// Only change code below this line
+pushArray.push(["dog", 3]);
+
+//44th task
+// Setup
+const poppedArray = [
+  ["John", 23],
+  ["cat", 2],
+];
+
+// Only change code below this line
+const removedFromMyArray = poppedArray.pop();
+
+//44th task
+// Setup
+const popArray = [
+  ["John", 23],
+  ["cat", 2],
+];
+
+// Only change code below this line
+const poppedFromMyArray = popArray.pop();
+
+//45th task
+// Setup
+const shiftArray = [
+  ["John", 23],
+  ["dog", 3],
+];
+
+// Only change code below this line
+const shiftedFromMyArray = shiftArray.shift();
+
+//Push & Pop - removes & adds new item to the last part of the array
+//Shif & Unshift - removes & adds new item to the first part of the array
+
+//46th task
+// Setup
+const unshiftArray = [
+  ["John", 23],
+  ["dog", 3],
+];
+myArray.shift();
+
+// Only change code below this line
+unshiftArray.unshift(["Paul", 35]);
+
+//47th task
+const myList = [
+  ["Keyboard", 50],
+  ["Mouse", 40],
+  ["Monitor", 30],
+  ["Webcam", 20],
+  ["Speakers", 10],
+];
+
+//48th task
+function reusableFunction() {
+  console.log("Hi World");
+}
+
+reusableFunction();
+
+//49th task
+function functionWithArgs(x, y) {
+  console.log(x + y);
+}
+
+functionWithArgs(1, 2);
+functionWithArgs(7, 9);
+
+//50th task
+function timesFive(num) {
+  return num * 5;
+}
+
+timesFive(5);
+timesFive(2);
+timesFive(0);
+
+//51st task
+// Declare the myGlobal variable below this line
+let myGlobal = 10;
+
+function fun1() {
+  // Assign 5 to oopsGlobal Here
+  oopsGlobal = 5;
+}
+
+// Only change code above this line
+
+function fun2() {
+  let output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}
+
+//52nd task
+function myLocalScope() {
+  // Only change code below this line
+  const myVar = "";
+
+  console.log("inside myLocalScope", myVar);
+}
+myLocalScope();
+
+// Run and check the console
+// myVar is not defined outside of myLocalScope
+console.log("outside myLocalScope", myVar);
+
+//53rd task
+// Setup
+const outerWear = "T-Shirt";
+
+function myOutfit() {
+  // Only change code below this line
+  const outerWear = "sweater";
+
+  // Only change code above this line
+  return outerWear;
+}
+
+myOutfit();
+
+//54th task
+// Setup
+let summ = 0;
+
+function addThree() {
+  summ = summ + 3;
+}
+
+// Only change code below this line
+
+function addFive() {
+  summ = summ + 5;
+}
+
+// Only change code above this line
+
+addThree();
+addFive();
+
+//55th task
+// Setup
+let processed = 0;
+
+function processArg(num) {
+  return (num + 3) / 5;
+}
+
+// Only change code below this line
+processArg(7);
+
+processed = processArg(7);
