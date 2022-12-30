@@ -606,3 +606,388 @@ function testLogicalOr(val) {
 }
 
 testLogicalOr(15);
+
+//70th task
+function testElse(val) {
+  let result = "";
+  // Only change code below this line
+
+  if (val > 5) {
+    result = "Bigger than 5";
+  } else {
+    result = "5 or Smaller";
+  }
+  // Only change code above this line
+  return result;
+}
+testElse(4);
+
+//71st task
+function testElseIf(val) {
+  if (val > 10) {
+    return "Greater than 10";
+  } else if (val < 5) {
+    return "Smaller than 5";
+  } else {
+    return "Between 5 and 10";
+  }
+}
+
+//72nd task
+function orderMyLogic(val) {
+  if (val < 5) {
+    return "Less than 5";
+  } else if (val < 10) {
+    return "Less than 10";
+  } else {
+    return "Greater than or equal to 10";
+  }
+}
+
+orderMyLogic(7);
+
+//73rd task
+function testSize(num) {
+  // Only change code below this line
+  if (num < 5) {
+    return "Tiny";
+  } else if (num < 10) {
+    return "Small";
+  } else if (num < 15) {
+    return "Medium";
+  } else if (num < 20) {
+    return "Large";
+  } else {
+    return "Huge";
+  }
+  // Only change code above this line
+}
+
+testSize(7);
+
+//74th task
+const names = [
+  "Hole-in-one!",
+  "Eagle",
+  "Birdie",
+  "Par",
+  "Bogey",
+  "Double Bogey",
+  "Go Home!",
+];
+
+function golfScore(par, strokes) {
+  // Only change code below this line
+  if (strokes == 1) {
+    return names[0];
+  } else if (strokes <= par - 2) {
+    return names[1];
+  } else if (strokes === par - 1) {
+    return names[2];
+  } else if (strokes === par) {
+    return names[3];
+  } else if (strokes === par + 1) {
+    return names[4];
+  } else if (strokes === par + 2) {
+    return names[5];
+  } else {
+    return names[6];
+  }
+
+  // Only change code above this line
+}
+
+golfScore(5, 4);
+
+//75th task
+function caseInSwitch(val) {
+  let answer = "";
+  // Only change code below this line
+
+  switch (val) {
+    case 1:
+      answer = "alpha";
+      break;
+    case 2:
+      answer = "beta";
+      break;
+    case 3:
+      answer = "gamma";
+      break;
+    case 4:
+      answer = "delta";
+      break;
+  }
+
+  // Only change code above this line
+  return answer;
+}
+
+caseInSwitch(1);
+
+//76th task
+function switchOfStuff(val) {
+  let answer = "";
+  // Only change code below this line
+  switch (val) {
+    case "a":
+      answer = "apple";
+      break;
+    case "b":
+      answer = "bird";
+      break;
+    case "c":
+      answer = "cat";
+      break;
+    default:
+      answer = "stuff";
+      break;
+  }
+  // Only change code above this line
+  return answer;
+}
+
+switchOfStuff(1);
+
+//77th task
+function sequentialSizes(val) {
+  let answer = "";
+  // Only change code below this line
+  switch (val) {
+    case 1:
+      answer = "Low";
+      break;
+    case 2:
+      answer = "Low";
+      break;
+    case 3:
+      answer = "Low";
+      break;
+    case 4:
+      answer = "Mid";
+      break;
+    case 5:
+      answer = "Mid";
+      break;
+    case 6:
+      answer = "Mid";
+      break;
+    case 7:
+      answer = "High";
+      break;
+    case 8:
+      answer = "High";
+      break;
+    case 9:
+      answer = "High";
+      break;
+  }
+
+  // Only change code above this line
+  return answer;
+}
+
+sequentialSizes(1);
+
+//78th task
+function chainToSwitch(val) {
+  let answer = "";
+  // Only change code below this line
+
+  switch (val) {
+    case "bob":
+      answer = "Marley";
+      break;
+    case 42:
+      answer = "The Answer";
+      break;
+    case 1:
+      answer = "There is no #1";
+      break;
+    case 99:
+      answer = "Missed me by this much!";
+      break;
+    case 7:
+      answer = "Ate Nine";
+      break;
+  }
+  // Only change code above this line
+  return answer;
+}
+
+chainToSwitch(7);
+
+//79th task
+function isLess(a, b) {
+  // Only change code below this line
+  return a <= b;
+  // Only change code above this line
+}
+
+isLess(10, 15);
+
+//80th task
+// Setup
+function abTest(a, b) {
+  // Only change code below this line
+
+  if (a < 0 || b < 0) {
+    return undefined;
+  }
+
+  // Only change code above this line
+
+  return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+}
+
+abTest(2, 2);
+
+//81st task
+let count = 0;
+
+function cc(card) {
+  // Only change code below this line
+  switch (card) {
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+      count++;
+      break;
+    case 10:
+    case "J":
+    case "Q":
+    case "K":
+    case "A":
+      count--;
+      break;
+  }
+  if (count > 0) {
+    return count + " Bet";
+  } else {
+    return count + " Hold";
+  }
+
+  // Only change code above this line
+}
+
+cc(2);
+cc(3);
+cc(7);
+cc("K");
+cc("A");
+
+//82nd task
+const myDog = {
+  // Only change code below this line
+  name: "Poochie",
+  legs: 4,
+  tails: 1,
+  friends: ["Felice", "Audrey"],
+
+  // Only change code above this line
+};
+
+//83rd task
+// Setup
+const testObj = {
+  hat: "ballcap",
+  shirt: "jersey",
+  shoes: "cleats",
+};
+
+// Only change code below this line
+const hatValue = testObj.hat; // Change this line
+const shirtValue = testObj.shirt; // Change this line
+
+//84th task
+// Setup
+const testObjAgain = {
+  "an entree": "hamburger",
+  "my side": "veggies",
+  "the drink": "water",
+};
+
+// Only change code below this line
+const entreeValue = testObjAgain["an entree"]; // Change this line
+const drinkValue = testObjAgain["the drink"]; // Change this line
+
+//85th task
+// Setup
+const newTestObj = {
+  12: "Namath",
+  16: "Montana",
+  19: "Unitas",
+};
+
+// Only change code below this line
+const playerNumber = 16; // Change this line
+const player = newTestObj[playerNumber]; // Change this line
+
+//86th task
+// Setup
+const newDog = {
+  name: "Coder",
+  legs: 4,
+  tails: 1,
+  friends: ["freeCodeCamp Campers"],
+};
+
+// Only change code below this line
+newDog.name = "Happy Coder";
+
+//87th task
+const anotherDog = {
+  name: "Happy Coder",
+  legs: 4,
+  tails: 1,
+  friends: ["freeCodeCamp Campers"],
+};
+
+anotherDog["bark"] = "woof";
+
+//88th task
+// Setup
+const newerDog = {
+  name: "Happy Coder",
+  legs: 4,
+  tails: 1,
+  friends: ["freeCodeCamp Campers"],
+  bark: "woof",
+};
+
+// Only change code below this line
+
+delete newerDog.tails;
+
+//89th task
+// Setup
+function phoneticLookup(val) {
+  let result = "";
+
+  // Only change code below this line
+
+  const lookup = {
+    alpha: "Adams",
+    bravo: "Boston",
+    charlie: "Chicago",
+    delta: "Denver",
+    echo: "Easy",
+    foxtrot: "Frank",
+  };
+  result = lookup[val];
+  // Only change code above this line
+  return result;
+}
+
+phoneticLookup("charlie");
+
+//90th task
+function checkObj(obj, checkProp) {
+  if (obj.hasOwnProperty(checkProp)) {
+    return obj[checkProp];
+  } else {
+    return "Not Found";
+  }
+}
