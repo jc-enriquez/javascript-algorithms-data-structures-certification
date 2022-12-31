@@ -991,3 +991,50 @@ function checkObj(obj, checkProp) {
     return "Not Found";
   }
 }
+
+//91st task
+const myMusic = [
+  {
+    artist: "Billy Joel",
+    title: "Piano Man",
+    release_year: 1973,
+    formats: ["CD", "8T", "LP"],
+    gold: true,
+  },
+
+  {
+    artist: "Random Artist",
+    title: "Random Title",
+    release_year: 2022,
+    formats: ["CD", "Cassette", "LP"],
+  },
+];
+
+//92nd tsk
+const myStorage = {
+  car: {
+    inside: {
+      "glove box": "maps",
+      "passenger seat": "crumbs",
+    },
+    outside: {
+      trunk: "jack",
+    },
+  },
+};
+
+const gloveBoxContents = myStorage.car.inside["glove box"];
+
+//93rd task
+const myPlants = [
+  {
+    type: "flowers",
+    list: ["rose", "tulip", "dandelion"],
+  },
+  {
+    type: "trees",
+    list: ["fir", "pine", "birch"],
+  },
+];
+
+const secondTree = myPlants[1].list[1];
